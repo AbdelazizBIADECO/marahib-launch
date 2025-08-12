@@ -7,7 +7,7 @@ import EmailForm from '../components/ui/EmailForm';
 import AnimatedText from '../components/ui/AnimatedText';
 
 const LaunchPage: React.FC = () => {
-  const launchDate = new Date('2025-07-16T00:00:00');
+  const launchDate = new Date('2025-09-01T00:00:00');
 
   const features = [
     {
