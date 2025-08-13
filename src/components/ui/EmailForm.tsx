@@ -21,7 +21,7 @@ const EmailForm: React.FC<EmailFormProps> = ({ onSuccess }) => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!email || !validateEmail(email)) {
       setStatus('error');
       setErrorMessage('Please enter a valid email address');
@@ -56,6 +56,18 @@ const EmailForm: React.FC<EmailFormProps> = ({ onSuccess }) => {
           throw error;
         }
       } else {
+        const res = await fetch('http://localhost:3000/api/send-email', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            toEmail: 'abdelazizbiad1@gmail.com',
+            toName: 'abdel',
+            templateParams: { PRENOM: 'aziz', link: 'https://example.com/welcome' }
+          })
+        });
+
+        const data = await res.json();
+        console.log('Email send result:', data);
         setStatus('success');
         setEmail('');
         setConsent(false);
@@ -82,7 +94,7 @@ const EmailForm: React.FC<EmailFormProps> = ({ onSuccess }) => {
           Thank you for subscribing!
         </h3>
         <p className="text-green-700 text-lg">
-          You'll be the first to know when we launch on July 16th, 2025.
+          You'll be the first to know when we launch on September 1st, 2025.
         </p>
       </motion.div>
     );
@@ -112,7 +124,7 @@ const EmailForm: React.FC<EmailFormProps> = ({ onSuccess }) => {
           disabled={isSubmitting}
         />
         <label htmlFor="consent" className="text-stone-600 leading-relaxed text-base">
-          I agree to receive marketing communications from Marahb. You can unsubscribe at any time. 
+          I agree to receive marketing communications from Marahb. You can unsubscribe at any time.
           View our <a href="/privacy-policy" className="text-stone-800 font-medium hover:underline transition-all duration-300">Privacy Policy</a>.
         </label>
       </div>

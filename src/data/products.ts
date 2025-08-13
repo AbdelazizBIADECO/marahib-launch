@@ -9,7 +9,7 @@ export const featuredProducts: Product[] = [
     originalPrice: 5877,
     currency: 'AED',
     images: [
-      'https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&cs=tinysrgb&w=800&h=800',
+      '/sofa.avif',
     ],
     colors: [
       { name: 'Charcoal', hex: '#36454F' },
@@ -32,7 +32,7 @@ export const featuredProducts: Product[] = [
     originalPrice: 4407,
     currency: 'AED',
     images: [
-      'https://images.pexels.com/photos/1080696/pexels-photo-1080696.jpeg?auto=compress&cs=tinysrgb&w=800&h=800',
+      "/louis-vuitton-blossom-stool-metal-by-tokujin-yoshioka--R96193_PM2_Front view copy copy.png"
     ],
     colors: [
       { name: 'Walnut', hex: '#8B4513' },
@@ -54,7 +54,7 @@ export const featuredProducts: Product[] = [
     originalPrice: 2201,
     currency: 'AED',
     images: [
-      'https://images.pexels.com/photos/586763/pexels-photo-586763.jpeg?auto=compress&cs=tinysrgb&w=800&h=800',
+      '/chair.avif',
     ],
     colors: [
       { name: 'Navy', hex: '#000080' },
@@ -76,7 +76,7 @@ export const featuredProducts: Product[] = [
     originalPrice: 1562,
     currency: 'AED',
     images: [
-      'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800&h=800',
+      '/table.avif',
     ],
     colors: [
       { name: 'Oak', hex: '#D2B48C' },
