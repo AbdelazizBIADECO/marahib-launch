@@ -26,13 +26,13 @@ export const featuredProducts: Product[] = [
   },
   {
     id: 'prod_2',
-    name: 'Dining Table Set',
+    name: 'Dining Table',
     designer: 'CB2',
     price: 3307,
     originalPrice: 4407,
     currency: 'AED',
     images: [
-      "/louis-vuitton-blossom-stool-metal-by-tokujin-yoshioka--R96193_PM2_Front view copy copy.png"
+      '/table.avif',
     ],
     colors: [
       { name: 'Walnut', hex: '#8B4513' },
@@ -76,7 +76,7 @@ export const featuredProducts: Product[] = [
     originalPrice: 1562,
     currency: 'AED',
     images: [
-      '/table.avif',
+      "/louis-vuitton-blossom-stool-metal-by-tokujin-yoshioka--R96193_PM2_Front view copy copy.png"
     ],
     colors: [
       { name: 'Oak', hex: '#D2B48C' },

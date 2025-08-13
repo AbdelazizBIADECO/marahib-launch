@@ -134,7 +134,7 @@ const LaunchPage: React.FC = () => {
                   <br />
                   <AnimatedText 
                     phrases={animatedPhrases}
-                    speed={2500}
+                    speed={3500}
                     className="min-h-[1.2em] flex items-center justify-center text-white"
                   />
                 </h1>
@@ -302,11 +302,6 @@ const LaunchPage: React.FC = () => {
                                 <span className="text-[#1d1d1d] font-light tracking-wide">
                                   AED {product.price.toLocaleString()}
                                 </span>
-                                {product.originalPrice && (
-                                  <span className="text-[#6e6e6e] line-through text-sm ml-3 font-light">
-                                    AED {product.originalPrice.toLocaleString()}
-                                  </span>
-                                )}
                               </div>
                               
                               {/* Note discrète sur la TVA */}
