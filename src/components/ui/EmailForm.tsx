@@ -60,9 +60,9 @@ const EmailForm: React.FC<EmailFormProps> = ({ onSuccess }) => {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            toEmail: 'abdelazizbiad1@gmail.com',
-            toName: 'abdel',
-            templateParams: { PRENOM: 'aziz', link: 'https://example.com/welcome' }
+            toEmail: email.toLowerCase().trim(),
+            toName: email.toLowerCase().trim().split('@')[0],
+            templateParams: { PRENOM: email.toLowerCase().trim().split('@')[0] }
           })
         });
 
