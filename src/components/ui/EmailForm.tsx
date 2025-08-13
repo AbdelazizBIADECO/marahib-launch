@@ -56,7 +56,7 @@ const EmailForm: React.FC<EmailFormProps> = ({ onSuccess }) => {
           throw error;
         }
       } else {
-        const res = await fetch('http://localhost:3000/api/send-email', {
+        const res = await fetch('https://marahib-dashboard.vercel.app/api/send-email', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
